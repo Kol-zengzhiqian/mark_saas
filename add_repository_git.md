@@ -42,7 +42,7 @@ Host github.com
     IdentityFile ~/.ssh/github
 ```
 
-* 测试链接
+* 测试链接
 ```
 ssh -i /Users/zengzhiqian/.ssh/github -T git@github.com
 
