@@ -76,3 +76,21 @@ git commit -m "first commit"
 ```
 git pull
 ```
+
+### 简单报错处理
+
+* Updates were rejected because the remote contains work that you do
+```
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:Kol-zengzhiqian/mark_saas.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+```
+看报错原因是我在远程做了改动
+
+解决方案：
+执行 git pull 远程分支名 本地分支名
+再执行git push命令，没有报错
