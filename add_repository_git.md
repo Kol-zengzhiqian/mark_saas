@@ -33,6 +33,15 @@ ssh-keygen -t rsa -C "xxx@qq.com"
 Setting - SSH and GPG keys - SSH keys - New SSH key
 ```
 
+* 添加host
+```
+vim ~/.ssh/config
+Host github.com
+    User zengzhiqian
+    Hostname github.com
+    IdentityFile ~/.ssh/github
+```
+
 * 测试链接
 ```
 ssh -i /Users/zengzhiqian/.ssh/github -T git@github.com
@@ -42,7 +51,7 @@ Hi Kol-zengzhiqian! You've successfully authenticated, but GitHub does not provi
 测试成功
 ```
 
-### 链接GitHub仓库
+### 链接github仓库
 
 * 创建仓库
 
@@ -50,5 +59,4 @@ Hi Kol-zengzhiqian! You've successfully authenticated, but GitHub does not provi
 ```
 cd $directory
 git clone git@github.com:Kol-zengzhiqian/mark_saas.git
-
 ```
