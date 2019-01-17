@@ -60,3 +60,19 @@ Hi Kol-zengzhiqian! You've successfully authenticated, but GitHub does not provi
 cd $directory
 git clone git@github.com:Kol-zengzhiqian/mark_saas.git
 ```
+
+* 上传代码至 GitHub
+```
+# 添加文件 
+git add $directory/$filename
+
+# 添加修改内容注释
+git commit -m "first commit"
+
+# git push
+```
+
+* 下载代码
+```
+git pull
+```
